@@ -1,0 +1,29 @@
+.about-container{
+    display:flex;
+    justify-content: center;
+
+}
+.about-vert-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.about-img .item{
+    margin-right:20px;
+}
+.about-under-title{
+    margin-bottom:20px;
+}
+.about-text{
+    margin-bottom:40px;
+    font-family: $primary-font;
+    color: $main-txt-cl;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(26/14);
+    letter-spacing: 0.02em;
+
+
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" href="./index.html"
+          ><svg class="animate__animated animate__bounceInDown logo__icon " width="69" height="55">
+            <use href="./images/svg/icons.svg#Logo"></use></svg></a>
+
+        <div class="animate__animated animate__fadeInRight header__nav-container">
+          <nav class="header__nav">
+            <ul class="site-nav list">
+              <li class="item"><a class="link" href="#about">About</a></li>
+              <li class="item">         
+                <a class="link" href="#price">Service and Prices</a>
+              </li>
+              <li class="item"><a class="link" href="#team">Barbers</a></li>
+              <li class="item"><a class="link" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="contact-cont">
+            <a class="phone link" href="tel:+48654987321">+48 654 987 321</a>
+            <a class="btn btn-theme-dark link" href="#book-service">Book a service</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--MAIN-->
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container container"> 
+          
+                   <!-- MEDIA LINKS  -->
+          <div class="hero__left-side">
+            <ul class="media__list">
+              <li class="media__item">
+                <a class="media__link" rel="noopener noreferer" target="_blank" href="#">Instagram</a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" rel="noopener noreferer" target="_blank" href="#">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__right-side hero__overlay">
+            <!-- SLIDER -->
+            <div class="barber__slider">
+              <div class="element">
+              </div>
+              <div class="element">
+              </div>
+              <div class="element">
+              </div>
+            </div>
+            <div class="barber__title">
+              <p class="upper-title upper-title-theme-dark">Hair salon in Toronto</pclass>
+              <h1 class="animate__animated animate__fadeInRight hero__title">Barbershop</h1>
+              <p class="under-title-theme-dark">
+                We are experts in trendy men's haircuts.<br />
+                We work quickly, carefully, and tastefully.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- ABOUT -->
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="is-hidden">About Us</h2>
+          <div class="about-container section">
+            <div class="about-img">
+              <ul class="flex-container list">
+                <li class="item">
+                  <img
+                    src="./images/barber_about1.jpg"
+                    alt="what we do1"
+                    width="270"
+                  />
+                </li>
+                <li class="item">
+                  <img
+                    src="./images/barber_about2.jpg"
+                    alt="what we do2"
+                    width="270"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="about-vert-container">
+              <p class="upper-title">About</p>
+              <h2 class="main-title">The best Barbershop in the city</h2>
+              <p class="about-under-title">
+                If you want to add more confidence to your image, you are definitely in the right place.
+              </p>
+              <p class="about-text">
+                We are a team that never rests on its laurels and yearns for change. And once you fall into the hands of our master,
+                you will never be the same again. We are a team that is always on the same wavelength with clients. Therefore, we are
+                always ready to improve everyone who comes to us!
+              </p>
+              <a class="link btn" href="#">Book a service</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service__price" id="price">
+        <div class="container">
+          <div class="vert-container">
+            <p>Spend time in invironment of the best Barbers</p>
+            <h2>Prices and Service</h2>
+            <div class="flex-container">
+              <div class="vert-container">
+                <ul class="price-list list">
+                  <li>
+                    <p>Mens haircut ______________ 300$</p>
+                  </li>
+                  <li>
+                    <p>Mens haircut ______________ 300$</p>
+                  </li>
+                  <li>
+                    <p>Mens haircut ______________ 300$</p>
+                  </li>
+                  <li>
+                    <p>Mens haircut ______________ 300$</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="vert-container">
+                <ul class="proce-list list">
+                  <li>
+                    <p>Mens beard brooming ______________ 250$</p>
+                  </li>
+                  <li>
+                    <p>Mens beard brooming ______________ 250$</p>
+                  </li>
+                  <li>
+                    <p>Mens beard brooming ______________ 250$</p>
+                  </li>
+                  <li>
+                    <p>Mens beard brooming ______________ 250$</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a class="btn link" herf="#">Book a service</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="perks" id="perks">
+        <div class="container">
+          <h2>Our Perks</h2>
+          <div class="flex-container">
+            <div class="vert-container">
+              <ul class="figures list">
+                <li class="figure-card">
+                  <span>600</span>
+                  <sub>+</sub>
+                  <p>Satisfied client per day</p>
+                </li>
+                <li class="figure-card">
+                  <span>20</span>
+                  <sub>+</sub>
+                  <p>The best barbers in Toronto</p>
+                </li>
+              </ul>
+            </div>
+            <div class="vert-container">
+              <ul class="figures list">
+                <li class="figure-card">
+                  <span>50</span>
+                  <sub>+</sub>
+                  <p>Rewards</p>
+                </li>
+                <li class="figure-card">
+                  <span>100</span>
+                  <sub>+</sub>
+                  <p>Gifts for premanent clients</p>
+                </li>
+              </ul>
+            </div>
+            <div class="vert-container">
+              <p>The Old school traditions</p>
+              <h3>Why does everybody come to us?</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                aperiam obcaecati ea praesentium, iusto sapiente quo deserunt
+                hic placeat sint reiciendis enim cum maxime quod consequuntur.
+                Officiis facilis dolor consequatur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-members" id="team">
+        <div class="container">
+          <p>for true connoisseurs of the atmosphere</p>
+          <h2>Our Barbers</h2>
+          <ul class="card-set flex-container list">
+            <li class="card">
+              <img src="./images/alan_black .jpg" alt="barber1" width="370" />
+              <div class="vert-container">
+                <h3>Alan Black</h3>
+                <p>Extreme Barber</p>
+                <ul class="social-net flex-container list">
+                  <li>
+                    <a href="" class="link-icon link">
+                      fb
+                      <!-- <svg class="icon">
+                      <use href=""></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      inst
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      tw
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      link
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/john_smith.jpg" alt="barber2" width="370" />
+              <div class="vert-container">
+                <h3>John Smith</h3>
+                <p>Extreme Barber</p>
+                <ul class="social-net flex-container list">
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/michel_doe .jpg" alt="barber3" width="370" />
+              <div class="vert-container">
+                <h3>Michel Doe</h3>
+                <p>Extreme Barber</p>
+                <ul class="social-net flex-container list">
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="link-icon link">
+                      <!-- <svg class="icon">
+                      <use></use>
+                    </svg> -->
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Gallery section -->
+      <section class="gallery">
+        <div class="container">
+          <p class="uppertitle">in Latin, "barba" means "beard"</p>
+          <h2 class="hidden">Our gallery</h2>
+          <ul class="flex-container list">
+            <li>
+              <img
+                src="./images/gallery1.jpg"
+                alt="pic1"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/gallery2.jpg"
+                alt="pic2"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/gallery3.jpg"
+                alt="pic3"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/gallery4.jpg"
+                alt="pic4"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Booking & Contacts -->
+      <section class="booking-contacts" id="contact">
+        <div class="container">
+          <div class="flex-container">
+            <section class="booking">
+              <h2>Online-booking</h2>
+            </section>
+            <section class="contacts vert-container">
+              <h2>Contacts</h2>
+              <address class="contacts">
+                <ul class="list">
+                  <li>
+                    <a href="" class="contact-link linkk"
+                      >Main Street, 7A Toronto, 08132</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:+380441111111" class="contact-link linkk"
+                      >+38 044 111 11 11</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mail:barbershop@email.com"
+                      class="contact-link linkk"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <p class="contacts-uppertitle">working hours</p>
+              <p class="contacts-schedule">
+                Every day from <time datetime="09:00">9:00</time> to
+                <time datetime="22:00">22:00</time>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
