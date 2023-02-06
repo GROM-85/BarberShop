@@ -1,0 +1,2 @@
+const e=document.querySelector(".hero__title");new IntersectionObserver(((e,t)=>{const s=e[0];s.isIntersecting&&(s.target.classList.add("show"),t.unobserve(s.target))})).observe(e);const t=document.querySelector(".benefites__container");new IntersectionObserver(((e,t)=>{const s=e[0];if(!s.isIntersecting)return;let[r,n]=s.target.children;r.classList.add("show"),n.classList.add("show")}),{threshold:.5}).observe(t);
+//# sourceMappingURL=index.8c1167b6.js.map
