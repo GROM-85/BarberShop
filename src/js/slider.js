@@ -8,7 +8,7 @@ class Slider{
         this.prev = null; // prev btn
         this.next = null; // next btn
         this.dots = []; // array of dot btns
-        this.time = null; // time for autoslide
+        this.timerId = null; // time for autoslide
 
         const defaultOpts = {
             pauseTime:0,
@@ -18,8 +18,8 @@ class Slider{
             generatePrevNext:true,
         }
         // in case developer add some options they substitute default ones
-        this.options = {...defaultOpts,opts}
-        console.log(this.options)
+        this.options = {...defaultOpts,...opts};
+        console.log(this.options);
 
         this.generateSlider();
         this.changeSlide(this.currSlide);
@@ -107,20 +107,21 @@ class Slider{
         this.slides[index].setAttribute("aria-hidden",false);
 
         //dots slide
-        if(this.options.generateDots){
-            this.dots.forEach(dot=> {
-                dot.classList.remove("slider-pagination-element-active");
-            });
-            this.dot[index].classList.add("slider-pagination-element-active")
-        }
+        // if(this.options.generateDots){
+        //     this.dots.forEach(dot=> {
+        //         dot.classList.remove("slider-pagination-element-active");
+        //     });
+        //     this.dot[index].classList.add("slider-pagination-element-active")
+        // }
 
         // set index for current slides
         this.currSlide  = index;
 
         // auto slide if pauseTime isnt 0 and "number"
-        if(typeof this.options.pauseTime === "number" && this.options.pauseTime!== 0){
-            clearTimeout(this.time);
-            this.time = setTimeout(()=>this.slideNext,this.options.pauseTime);
+        if(typeof this.options.pauseTime === "number" && this.options.pauseTime !== 0){
+            console.log(this.options.pauseTime)
+            clearTimeout(this.timerId);
+            this.timerId = setTimeout(this.slideNext.bind(this),this.options.pauseTime);
         }
     }
 
@@ -142,8 +143,8 @@ class Slider{
 }
 
 const opts = {
-    pauseTime : 3000,
+    pauseTime : 3500,
     generateDots:true,
-    generatePrevNext:false,
+    generatePrevNext:true,
 }
 const slider = new Slider({selector:".barber__slider",opts})

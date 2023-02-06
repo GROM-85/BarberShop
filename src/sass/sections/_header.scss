@@ -17,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        --animate-duration: 2.5s; 
     }
 
     &__nav-container{
@@ -40,6 +40,9 @@
     line-height: calc(16/11);
     letter-spacing: 0.1em;    
 
+}
+.contact-cont{
+    --animate-duration: 5s;
 }
 
 .site-nav .link:hover,

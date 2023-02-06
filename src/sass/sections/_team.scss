@@ -1,17 +1,33 @@
-.team-members{
-    background-color:#F7F7F7
-}
-.card{
-    width: 370px;
-    height:502px;
+.team{
+    background-color:#F7F7F7;
+
+    &__card-set{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @include flex-basis(30px,3);
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h3{
+            margin-top:30px;
+            @include font(400,18px,calc(24/18),0.02em);
+        }
+
+        & p{
+            margin-top:8px;
+            @include font(400,14px,calc(19/14),0.02em);
+            color: $accent-txt-cl;
+        }
+    }
 }
 
-.link-icon{
-    width:44px;
-    height:44px;
-    border-radius:50%;
-    color:burlywood;
-}
+
+
 
 .social-net.flex-container{
     padding:0;

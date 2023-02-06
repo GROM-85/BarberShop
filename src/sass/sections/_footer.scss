@@ -1,0 +1,46 @@
+.footer{
+    &__container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 56px 0;
+    }
+    &__copyright{
+        margin-left:73px ;
+        vertical-align: center;
+        color: #9DA4BD;
+        @include font(600,11px,calc(14/11),0.2em)
+    }
+    &__list{
+        margin-right: 55px;
+        display:flex;
+        justify-content: center;
+        gap:40px;
+        align-items: center;
+        
+
+
+        &::before{
+            content:"";
+            display:inline-block;
+            width:60px;
+            height:1px;
+            background-color: #303030;
+        }
+    }
+
+    &__item{
+        display: flex;
+        align-items: center
+    }
+
+    &__link{ 
+        @include font(600,11px,calc(14/11),0.2em);
+        &:hover,
+        &:focus{
+            color:$accent-txt-cl;
+        }
+    
+    }
+}
+    

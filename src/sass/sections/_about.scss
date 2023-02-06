@@ -1,29 +1,34 @@
-.about-container{
-    display:flex;
-    justify-content: center;
+.about{
+    &__container{
+        display:flex;
+        justify-content: center;
+        gap:64px;
+    
+    }
 
-}
-.about-vert-container{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-.about-img .item{
-    margin-right:20px;
-}
-.about-under-title{
-    margin-bottom:20px;
-}
-.about-text{
-    margin-bottom:40px;
-    font-family: $primary-font;
-    color: $main-txt-cl;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(26/14);
-    letter-spacing: 0.02em;
+    &__list{
+        display:flex;
+        justify-content: center;
+        gap:30px;
+    }
+    &__right-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
 
+    }
 
+    &__under-title{
+        margin-bottom:20px;
+        color:$dark-txt-cl;
+        @include font(400,18px,calc(30/18),0.02em);
+    }
+
+    &__title-text{
+        margin-bottom:40px;
+        @include font(400,14px,calc(26/14),0.02em);
+    
+    }
 }

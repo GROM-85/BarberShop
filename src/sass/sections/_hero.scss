@@ -31,27 +31,23 @@
     font-size: 72px;
     font-weight: 700;
     line-height: calc(84/72);
-    letter-spacing: 0.05em;
+    letter-spacing: 50em;
     margin-bottom:20px;
+    opacity:0;
+    transform: translateX(-210px);
+    transition: letter-spacing 1.9s, transform 1.7s;
+    
+}
+.hero__title.show{
+    opacity: 1;
+    transform:translateX(0);
+    letter-spacing: 0.05em;
 }
 
 .barber__title{
     position:absolute;
-    z-index: 5;
-
-    & .upper-title{
-        display: flex;
-        align-items: center;
-        gap:20px;
-
-        &::before{
-            content:"";
-            display:block;
-            width:60px;
-            height:1px;
-            background-color: currentColor;
-        }
-    }
+    
+    z-index: 1;
 }
 
 .hero__overlay{
@@ -66,7 +62,7 @@
         position:absolute;
 
         bottom: 0;
-        left:0;
+        left: 20px;
         transform:rotate(-90deg);
         transform-origin: left top;
         
@@ -83,13 +79,13 @@
         }
 
     }
-
-    
+    &__item{
+        display: flex;
+        align-items: center
+    }
 
     &__link{
         @include font(600,11px,calc(14/11),0.2em);
-        
-
         &:hover,
         &:focus{
             color:$accent-txt-cl;

@@ -28,6 +28,7 @@
     flex-direction: column;
     opacity:0;
     z-index: 0;
+    
 }
 .slider-slide-active {
     opacity: 1;
@@ -65,7 +66,7 @@
 /* animation */
 .slider-slide {
     opacity: 0;
-    transition:0.4s all;
+    transition:opacity 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .slider-slide-active {
     opacity: 1;
@@ -120,8 +121,7 @@
 .slider-button-next:focus ,
 .slider-button-prev:hover,
 .slider-button-next:hover{
-   
-    color:$light-txt-cl;
+   color:$light-txt-cl;
 }
 .slider-button-prev:before,
 .slider-button-next:before {
